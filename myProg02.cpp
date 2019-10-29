@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
   }
   ifstream in;
   string str;
-  getLine(in,str);
+  getline(in,str);
   int numAnimals = 0;
   int numNotDucks = 0;
   int numDucks = 0;
