@@ -1,5 +1,7 @@
 // myProg.cpp
 // Author: John Judge
+// Date: 10/29/19
+//Simple loop example
 #include <iostream>
 
 using namespace std;
