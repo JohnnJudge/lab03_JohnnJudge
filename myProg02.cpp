@@ -34,7 +34,7 @@ int main(int argc, char * argv[]) {
         numAnimals++;
         getline( in , str);
     }
-    cout << "Report for animals01.txt:" << endl <<
+    cout << "Report for "<<argv[1]<<":" << endl <<
         "   Animal count:    " << numAnimals << endl <<
         "   Duck count:      " << numDucks << endl <<
         "   Non duck count:  " << numNotDucks << endl;
