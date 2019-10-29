@@ -17,19 +17,21 @@ int main(int argc, char *argv[])
   }
   ifstream in;
   string str;
-  getline(in,str);
   int numAnimals = 0;
   int numNotDucks = 0;
   int numDucks = 0;
   in.open(argv[1]);
-  while(in){
+  while(true){
+	getLine(in,str);
+	if(!in){
+		break;
+	}
 	if(str != "duck"){
 		numNotDucks++;
 	}else{
 	numDucks++;
 	}
 	numAnimals++;
-	getline(in,str);
   }
   cout << "Report for animals01.txt:" << endl
   << "   Animal count:    " <<numAnimals << endl
