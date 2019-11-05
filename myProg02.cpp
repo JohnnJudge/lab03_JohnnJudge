@@ -20,7 +20,8 @@ int main(int argc, char * argv[]) {
         exit(1); // defined in cstdlib
     }
     ifstream in ;
-    string str; in .open(argv[1]);
+    string str; 
+    in .open(argv[1]);
     getline( in , str);
     int numAnimals = 0;
     int numNotDucks = 0;
